@@ -14,6 +14,8 @@ _A powerful web application that intelligently processes meeting transcripts, ge
 
 ---
 
+[Site Live Link](https://aisummarizer-dem3.onrender.com/)
+
 ## ✨ Overview
 
 AI Meeting Notes revolutionizes meeting documentation by automatically transforming raw transcripts into structured, actionable summaries. Built with modern web technologies, it ensures seamless integration into existing workflows while maintaining professional presentation standards.
@@ -91,7 +93,7 @@ Before installation, ensure you have:
 
    ```bash
    git clone https://github.com/yourusername/ai-meeting-notes.git
-   cd ai-meeting-notes
+   cd aisummarizer
    ```
 
 2. **Install Dependencies**
