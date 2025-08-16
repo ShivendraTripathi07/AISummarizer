@@ -17,7 +17,7 @@ export default function Home() {
   const [sending, setSending] = useState(false);
 
   // Handle transcript file upload
-  const handleFileUpload = async (e) => {
+  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
 
@@ -78,7 +78,7 @@ export default function Home() {
       // Send email to each recipient
       for (const email of emailList) {
         if (email) { // Only send if email is not empty
-          emailPromises.push(sendEmail({ 
+          emailPromises.push(sendEmail({
             toEmail: email,
             fromEmail: fromEmail,
             name: fromName,

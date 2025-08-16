@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
             "No summary could be generated.";
 
         return NextResponse.json({ summary });
-    } catch (err: any) {
+    } catch (err: unknown) {
         console.error("Summarize error:", err);
         return NextResponse.json(
             { error: "Failed to generate summary" },
